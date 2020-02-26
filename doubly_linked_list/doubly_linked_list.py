@@ -57,10 +57,8 @@ class DoublyLinkedList:
 
     def add_to_head(self, value):
         self.tail = self.head
-        self.head = ListNode(value)
+        self.head = ListNode(value, self.tail, None)
         self.tail.next = self.head
-        self.head.prev = self.tail
-        self.head.next = None
         self.length += 1
         return self
 
@@ -114,7 +112,6 @@ def test_function():
     print('Node: ', node)
     dll = DoublyLinkedList(node)
     print('DLL: ', dll)
-    print('DLL: ', dll.add_to_head(2))
     print('DLL Head: ', dll.head.value)
     print('DLL Head Prev - Next: ', dll.head.prev, dll.head.next)
     print('DLL Tail: ', dll.tail.value)

@@ -1,6 +1,5 @@
 import unittest
-from avl_tree import AVLTree
-from avl_tree import Node
+from avl_tree.avl_tree import *
 
 class AVLTreeTests(unittest.TestCase):
   def setUp(self):

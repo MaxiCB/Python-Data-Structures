@@ -1,5 +1,5 @@
 import unittest
-from dll_stack import Stack
+from queue_and_stack.dll_stack import Stack
 
 
 class QueueTests(unittest.TestCase):
