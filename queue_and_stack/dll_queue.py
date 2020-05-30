@@ -14,7 +14,7 @@ class Queue:
     def enqueue(self, value):
         self.storage.append(value)
 
-    # Remove the item form the front of the queue
+    # Remove the item from the front of the queue
     def dequeue(self):
         if len(self.storage) == 0:
             return None

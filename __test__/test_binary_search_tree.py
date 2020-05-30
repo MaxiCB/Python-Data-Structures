@@ -61,6 +61,7 @@ class BinarySearchTreeTests(unittest.TestCase):
         self.assertTrue(v3 in arr)
         self.assertTrue(v4 in arr)
         self.assertTrue(v5 in arr)
+        print(arr)
 
     def test_print_traversals(self):
         # WARNING:  Tests are for Print()
